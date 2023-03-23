@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Toby Frick</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/universal/general.css">
+    <link rel="stylesheet" href="styles/universal/header.css">
+
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/project-grid.css">
+
+    <link rel="stylesheet" href="styles/backLeft.css">
+
+    <link rel="stylesheet" href="styles/tabs/tabs.css">
+    <link rel="stylesheet" href="styles/tabs/educationTab.css">
+    <link rel="stylesheet" href="styles/tabs/experienceTab.css">
+    <link rel="stylesheet" href="styles/tabs/skillsTab.css">
+    
+
+</head>
+<body class="homepage-body">
+    <header class="header">
+            <div class="left-header">
+                TF
+            </div>
+            <div class="middle-header">
+              <div>Hi, I'm Toby. Here's my card.</div>
+            </div>
+    </header>
+    <!--<div class="cardTitle">Hi, I'm Toby. <br> Don't Know Me? Here's My Card.</div>-->
+    <main class="homepage-main">
+        <div id="pageTop" class="cardBox">
+            <button id="flipButton" class="flipSpace">
+              <img class="flipIcon" src="icons/rotate-icon.png" />
+              <div class="flipButton">Flip Over</div>
+            </button>
+            <div id="card" class="card">
+                <div class="cardFront">
+                    <div class="frontLeftCard">
+                        <div class="introduction">
+                          <div class="name"><span class="firstName">Toby</span> Frick</div>
+                          <div class="jobTitle">Software Developer</div>
+                          <div class="line"></div>
+                        </div>
+                        <div class="contactBox">
+                          <a href="https://github.com/FrickTob" target="_blank"><img src="media/github-icon.png"></a>
+                          <a href="https://www.linkedin.com/in/toby-frick/"><img src="media/linkedin-icon.png" class="linkedinImg"></a>
+                          <a href="mailto:fricktob@grinnell.edu"><img src="media/gmail-icon.png"></a>
+                        </div>
+                        <div>
+                          <div class="skillsPreview"> Technical Communicator | Student Mentor</div>
+                          <div class="resume">Check Out My Resume or Flip This Card To Learn More</div>
+                        </div>
+                        <div class="resumeSection">
+                          <button class="resumeButton">Resume</button>
+                        </div>
+                    </div>
+                    <div class="frontRightCard">
+                      <div class="projectsHeaderBox">
+                        <div class="projectsLine"></div>
+                        <div class="projectsHeader">Featured Projects</div>
+                      </div>
+                      <div class="projectBox">
+                          <div id="projectBox1" class="projectBox1">
+                            <p>Computer Vision Chess Recognition</p>
+                            <img class="projectImg1" id="projectImg1" src="media/chessBoard.jpeg">
+                          </div>
+                          <div id="projectBox1" class="projectBox2">
+                            <p>Hue-Doku Colorful Sudoku Android Application</p>
+                            <img class="projectImg2" id="projectImg2" src="media/huedoku-logo.jpg">
+                          </div>
+                          <div id="projectBox1" class="projectBox3">
+                            <p>This Website</p>
+                            <img class="projectImg3" id="projectImg3" src="media/htmlcssjs.png">
+                          </div>
+                          <div id="projectBox1" class="projectBox4">
+                            <p>Hold Em Helper Android Poker Application</p>
+                            <img class="projectImg4" id="projectImg4" src="media/small-holdem.png">
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            <div class="cardBack">
+                <div class="backLeftCard">
+                  <div class="aboutTitleBox">
+                    <div class="aboutLine"></div>
+                    <div class="aboutTitleText">About</div>
+                    <a class="devJournalText" href="https://github.com/FrickTob/developer-journal" target="_blank">Follow Along With My Progress</a>
+                  </div>
+                  <div class="aboutContent">
+                    <div class="interestsBox">
+                      <h2>Professional Interests</h2>
+                      <div class="interestsGrid">
+                        <div class="interestBox"><div class="appDevImg"></div><p>App Development</p></div>
+                        <div class="interestBox"><div class="automationImg"></div><p>Automation</p></div>
+                        <div class="interestBox"><div class="cvImg"></div><p>Computer Vision</p></div>
+                        <div class="interestBox"><div class="aiImg"></div><p>AI Systems</p></div>
+                        <div class="interestBox"><div class="webDevImg"></div><p>Web Development</p></div>
+                      </div>
+                    </div>
+                    <div class="hobbiesBox">
+                      <h2>After hours</h2>
+                      <div class="hobbiesRow">
+                        <div><div class="hobbiesImg1"></div><p>Scuba Diving</p></div>
+                        <div><div class="hobbiesImg2"></div><p>Board Games</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="backRightCard" class="backRightCard">
+                  <div class="tabRow">
+                      <div id="tab1" class="selectedTab">Skills</div>
+                      <div id="tab2" class="tab2">Education</div>
+                      <div id="tab3" class="tab3">Experience</div>
+                  </div>
+                  <div id="skillsTab" class="showTabContent">
+                    <div class="skillsBox">
+                      <div class="peopleSkillsBox">
+                        <p>I love conversation and explaining technical solutions</p>
+                      </div>
+                      <div class="skillsFrame">
+                        <div class="languagesBox">
+                          <h2>Languages</h2>
+                          <p>Python · Java · Javascript · HTML/CSS · MIPS Assembly</p>
+                        </div>
+                        <div class="frameworksBox">
+                          <h2>Frameworks</h2>
+                          <p>React · Android Studio</p>
+                        </div>
+                        <div class="toolsBox">
+                          <h2>Tools</h2>
+                          <p>Git · Firebase · AWS · UNIX</p>
+                        </div>
+                        <div class="designBox">
+                          <h2>Design Principles and Methods</h2>
+                          <p>MVC Architecture · Android App Development<br>Web Development · SCRUM Methodologies</p>
+                        </div>
+                      </div>
+                      <div class="githubLine">See these skills in practice on&nbsp;<a href="github.com"> GitHub</a></div>
+                    </div>
+                  </div>
+                  <div id="educationTab" class="hideTabContent">
+                    <div class="educationBox">
+                      <div class="grinnellBox">
+                        <div class="topGrinnellBox"> 
+                          <div class="grinnellLeftLine"></div>
+                          <div class="grinnellRightLine"></div>                        
+                          <h2>Grinnell College</h2>
+                          <h4>GPA: 3.8</h4>
+                        </div>
+                        <div class="bottomGrinnellBox">
+                          <h4>BA in Computer Science</h4>
+                          <h4>Graduation Date: May 2024</h4>
+                        </div>
+                      </div>
+                      <div class="courseworkBox">
+                        <h4>Coursework</h4>
+                        <div class="courseworkLine"></div>
+                        <div class="classesBox">
+                          <div class="classesGrid">
+                            <p>Object Oriented Programming</p>
+                            <p>Imperative Programming</p>
+                            <p>Functional Programming</p>
+                            <p>Computer Vision</p>
+                            <p>Computer Organization and Architecture</p>
+                            <p>Graph Theory</p>
+                            <p>Text Mining for AI</p>
+                            <p>Linear Algebra</p>
+                            <p>Software Design and Developement</p>
+                            <p>Multivariable Calculus</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="extracurricularBox">
+                        <h4>After Class</h4>
+                        <div class="activitiesGrid">
+                          <p>Grinnell College <span>Dive<img class="diveImg" src="media/divingPic.jpg"/></span> Team</p>
+                          <p>Student Body Senator (2022)</p></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="experienceTab" class="hideTabContent">
+                    <div class="experienceBox">
+                      <div class="epicBox">
+                        <div class="epicTop">
+                          <h4>Epic Systems Inc</h4>
+                          <h4>Software Development Intern</h4>
+                        </div>
+                        <div class="epicDescription">
+                          <ul>
+                            <li>Something about Epic</li>
+                            <li>something else about epic</li>
+                          </ul>
+                        </div>
+                        <img src="media/epicLogo.png"/>
+                      </div>
+                      <div class="abroadBox">
+                        <h4>Semester In Amsterdam</h4>
+                      </div>
+                      <div class="tutorBox">
+                        <h4>Grinnell College</h4>
+                        <h2>Computer Science Tutor</h2>
+                        <div class="tutorDescription">
+                          <ul>
+                            <li>Something about Epic</li>
+                            <li>something else about epic</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <script src="scripts/cardflip.js"></script>
+    <script src="scripts/tabs.js"></script>
+    <script src="scripts/links.js"></script>
+</body>
+</html>

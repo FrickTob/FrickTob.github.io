@@ -1,0 +1,185 @@
+.backLeftCard {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    background-color: darkgray;
+}
+.aboutTitleBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.aboutLine {    
+    height: 2px;
+    width: 25%;
+    background-color: black; 
+}
+.aboutTitleText {
+    font-weight: 400;
+    font-size: 48px;
+    padding-left: 15px;
+}
+.devJournalText {
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    justify-self: center;
+    background-color: darkgray;
+    color: black;
+    border: 1px solid black;
+    padding: 3px;
+    box-shadow: -1px 1px 2px black;
+    height: fit-content;
+    text-decoration: none;
+}
+.devJournalText:hover {
+    background-color: rgb(130, 130, 130);
+}
+.devJournalText:active {
+    box-shadow: inset -1px 1px 2px black;
+}
+
+
+.aboutContent {
+    display: grid;
+    grid-template-rows: 1fr 150px;
+}
+
+
+.interestsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.interestsBox h2 {
+    margin-left: 10px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.interestsGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    height: 100%;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.interestsGrid div  {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+}
+
+.interestsGrid div div {
+    position: relative;
+    background-position: center;
+    transition: opacity .15s;
+    width: 100%;
+    height: 100%;  
+}
+.interestsGrid div div::before {
+    content:"";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: .4;
+}
+.appDevImg {
+    background-image: url(/media/appDevelopment.jpg);
+    background-size: 400px;
+}
+
+.webDevImg {
+    background-image: url(/media/webDevelopment.jpg);
+    background-size: 500px;
+}
+.automationImg {
+    background-image: url(/media/automation.jpg);
+    background-size: 400px;
+}
+.cvImg {
+    background-image: url(/media/computerVision.jpg);
+    background-size: 500px;
+}
+.aiImg {
+    background-image: url(/media/aiSystems.jpg);
+    background-size: 500px;
+}
+.aboutContent {
+    height: 100%;
+}
+.interestsGrid div p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 24px;
+    color: lightgray;
+}
+
+.hobbiesBox {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.hobbiesBox h2 {
+    margin-left: 10px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.hobbiesRow {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+.hobbiesRow div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.hobbiesRow div p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+.hobbiesRow div div {
+    width:100%;
+    height: 100%;
+    background-position: center;
+    transition: opacity .15s;
+}
+.hobbiesImg1 {
+    position: relative;
+    background-image: url(/media/scubaDiving.jpg);
+    background-size: 200px;
+    z-index: 2;
+}
+.hobbiesImg2 {
+    position: relative;
+    background-image: url(/media/boardGame.jpg);
+    background-size: 300px;
+    z-index: 2;
+}
+.hobbiesImg1:hover, .hobbiesImg2:hover {
+    opacity: .3;
+}

@@ -1,0 +1,17 @@
+body {
+    cursor: default;
+    background-color: #272727;
+    color: black;
+    font-family: Ubuntu;
+
+}
+main {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+h2 {
+    margin: 0;
+}
+h4 {
+    margin: 0;
+}

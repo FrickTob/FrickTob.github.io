@@ -1,0 +1,62 @@
+.projectBox {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    aspect-ratio: 1;
+    width: 90%;
+    padding-top: 20px;
+    justify-self: center;
+}
+
+.projects-title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.projectBox img:hover {
+    background-color: #CCCCCC;
+    opacity: .3;
+}
+
+.projectBox img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+    transition: opacity .15s;
+}
+.projectImg1 {
+    object-position: 0px 0px;
+}
+.projectBox div {
+    position: relative;
+    background-color: white;
+    box-shadow: -3px 3px 0px darkgray;
+}
+.projectBox div:hover {
+    background-color: black;
+}
+.projectBox div:active {
+    background-color: #333333;
+}
+.projectBox p {
+    position: absolute;
+    top: 40%;
+    width: 99%;
+    text-align: center;
+    color: white;
+}
+.projectBox1, .projectImg1 {
+    border-top-left-radius: 15%;
+}
+.projectBox2, .projectImg2 {
+    border-top-right-radius: 15%;
+}
+.projectBox3, .projectImg3 {
+    border-bottom-left-radius: 15%;
+}
+.projectBox4, .projectImg4 {
+    border-bottom-right-radius: 15%;
+}

@@ -1,0 +1,35 @@
+.about-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
+}
+.title {
+    font-size: 28pt;
+}
+.about-line {
+    width: 100%;
+    height: 3px;
+    background-color: #cbddd1;
+}
+.about-description {
+    padding-top: 15px ;
+    font-size: 14pt;
+    line-height: 1.6;
+}
+
+
+.headshot-box {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.headshot-box img {
+    width: 500px;
+    border-radius: 100px 50px 0px 50px;
+}

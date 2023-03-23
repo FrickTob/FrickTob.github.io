@@ -1,0 +1,30 @@
+.experienceBox {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,1) 30%, darkgray 120%);
+}
+.epicTop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    padding-top: 10px;
+    font-size: 24px;
+}
+.epicTop h4 {
+    font-weight: 300;
+}
+
+.epicBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.epicDescription {
+    background-color: lightblue;
+    align-self:flex-start;
+}
+.epicBox img {
+    width: 200px;
+}

@@ -1,0 +1,159 @@
+.educationBox {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 90px 1fr 100px;
+    position: relative;
+    width: 100%;
+    background: url(/media/grinnellLogo.png) center center;
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+}
+
+.grinnellBox {
+    position: relative;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    
+}
+.grinnellBox h2 {
+    font-size: 32px;
+    font-weight: 200;
+}
+.grinnellBox h4 {
+    font-weight: 300;
+    font-size: 16px;
+}
+.bottomGrinnellBox h4 {
+    font-style:oblique;
+    padding-left: 3px;
+}
+.topGrinnellBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bottomGrinnellBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.grinnellLeftLine {
+    position:absolute;
+    top: 36%;
+    height: 1px;
+    left: -5px;
+    width: 30%;
+    background-color: black; 
+    margin-left: 5px;
+}
+.grinnellRightLine {
+    position:absolute;
+    height: 1px;
+    width: 20%;
+    right: 0;
+    bottom: -40%;
+    background-color: black; 
+    margin-left: 5px;
+}
+
+
+.courseworkBox {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.courseworkBox h4 {
+    font-size: 30px;
+    font-weight: 200;
+}
+.courseworkLine {
+    height: 1px;
+    width: 75%;
+    background-color: black; 
+    margin-top: 10px;
+}
+.classesBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.classesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px 70px 70px 70px;
+}
+.classesGrid p {
+    font-weight: 300;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted black;
+}
+.classesGrid p:last-child {
+    grid-area: 4/2;
+}
+
+.extracurricularBox {
+    height: 100%;
+    border-top: 1px solid darkgray;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+}
+.extracurricularBox h4 {
+    font-size: 24px;
+    font-weight: 200;
+    align-self: center;
+}
+.extracurricularBox p {
+    align-self: center;
+}
+
+.extracurricularBox span {
+    position:relative;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.extracurricularBox span:hover .diveImg {
+    visibility: visible;
+    opacity: 1;
+}
+.extracurricularLine {
+    height: 1px;
+    width: 30px;
+    background-color: black;
+    margin: 0px 20px;
+}
+.activitiesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center center;
+    width: 100%;
+
+}
+.diveImg {
+    position: absolute;
+    visibility: hidden;
+    box-shadow: -2px 2px 2px darkgray;
+    width: 200px;
+    opacity: 0;
+    border-radius: 30px;
+    top: -1200%;
+    left: 0%;
+    transition: opacity .15s;
+}
