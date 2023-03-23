@@ -33,7 +33,7 @@
 .projectBox div {
     position: relative;
     background-color: white;
-    box-shadow: -3px 3px 0px darkgray;
+    border: 1px solid black;
 }
 .projectBox div:hover {
     background-color: black;
