@@ -4,6 +4,83 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="experienceWrapper">
+        <button class="experienceTab1">Tutor</button>
+        <div class="tutorBox">tutor info</div>
+        <button class="experienceTab2">Abroad</button>
+        <div class="abroadBox">abroad info</div>
+        <button class="experienceTab3">Internship</button>
+        <div class="internshipBox">internship info</div>
+    </div>
+
+    <style>
+        .experienceWrapper {
+            width: 100%;
+            height: 500px;
+            background-color: #ccc;
+            border: 1px solid #000;
+            float: left;
+        }
+        .experienceTab1, .experienceTab2, .experienceTab3 {
+            width: 100px;
+            height: 10%;
+            background-color: #ccc;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 50px;
+            float: left;
+        }
+        .tutorBox, .abroadBox, .internshipBox {
+            width: 100%;
+            height: 200px;
+            background-color: #ccc;
+            border: 1px solid #000;
+            float: left;
+        }
+        .tutorBox {
+            height: 0;
+            overflow: hidden;
+            transition: height .5s ease;
+        }
+        .abroadBox {
+            height: 0;
+            overflow: hidden;
+            transition: height .5s ease;
+        }
+        .internshipBox {
+            height: 0;
+            overflow: hidden;
+            transition: height .5s ease;
+        }
+        .experienceTab1:hover, .experienceTab2:hover, .experienceTab3:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+    </style>
+    <script>
+        var experienceTab1 = document.querySelector('.experienceTab1');
+        var experienceTab2 = document.querySelector('.experienceTab2');
+        var experienceTab3 = document.querySelector('.experienceTab3');
+        var tutorBox = document.querySelector('.tutorBox');
+        var abroadBox = document.querySelector('.abroadBox');
+        var internshipBox = document.querySelector('.internshipBox');
+
+        experienceTab1.addEventListener('click', function() {
+            tutorBox.style.height = '70%';
+            abroadBox.style.height = '0';
+            internshipBox.style.height = '0';
+        });
+        experienceTab2.addEventListener('click', function() {
+            tutorBox.style.height = '0';
+            abroadBox.style.height = '70%';
+            internshipBox.style.height = '0';
+        });
+        experienceTab3.addEventListener('click', function() {
+            tutorBox.style.height = '0';
+            abroadBox.style.height = '0';
+            internshipBox.style.height = '70%';
+        });
+    </script>
 </body>
 </html>

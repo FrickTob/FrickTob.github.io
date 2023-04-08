@@ -66,7 +66,7 @@
                       </div>
                       <div class="projectBox">
                           <div id="projectBox1" class="projectBox1">
-                            <p>Computer Vision Chess Recognition</p>
+                            <p>Computer Vision Neural Network Chess Recognition System</p>
                             <img class="projectImg1" id="projectImg1" src="media/chessBoard.jpeg">
                           </div>
                           <div id="projectBox1" class="projectBox2">
@@ -96,9 +96,9 @@
                       <h2>Professional Interests</h2>
                       <div class="interestsGrid">
                         <div class="interestBox"><div class="appDevImg"></div><p>App Development</p></div>
-                        <div class="interestBox"><div class="automationImg"></div><p>Automation</p></div>
                         <div class="interestBox"><div class="cvImg"></div><p>Computer Vision</p></div>
                         <div class="interestBox"><div class="aiImg"></div><p>AI Systems</p></div>
+                        <div class="interestBox"><div class="automationImg"></div><p>Automation</p></div>
                         <div class="interestBox"><div class="webDevImg"></div><p>Web Development</p></div>
                       </div>
                     </div>
@@ -113,6 +113,7 @@
                 </div>
                 <div id="backRightCard" class="backRightCard">
                   <div class="tabRow">
+                    <!--Maybe swap order of tabs-->
                       <div id="tab1" class="selectedTab">Skills</div>
                       <div id="tab2" class="tab2">Education</div>
                       <div id="tab3" class="tab3">Experience</div>
@@ -120,7 +121,7 @@
                   <div id="skillsTab" class="showTabContent">
                     <div class="skillsBox">
                       <div class="peopleSkillsBox">
-                        <p>I love conversation and explaining technical solutions</p>
+                        <p>Always striving for a T-shaped knowledge base</p>
                       </div>
                       <div class="skillsFrame">
                         <div class="languagesBox">
@@ -140,7 +141,7 @@
                           <p>MVC Architecture · Android App Development<br>Web Development · SCRUM Methodologies</p>
                         </div>
                       </div>
-                      <div class="githubLine">See these skills in practice on&nbsp;<a href="github.com"> GitHub</a></div>
+                      <div class="githubLine"><a href="github.com">See these skills in practice on my GitHub account</a></div>
                     </div>
                   </div>
                   <div id="educationTab" class="hideTabContent">
@@ -185,32 +186,48 @@
                   </div>
                   <div id="experienceTab" class="hideTabContent">
                     <div class="experienceBox">
-                      <div class="epicBox">
-                        <div class="epicTop">
-                          <h4>Epic Systems Inc</h4>
-                          <h4>Software Development Intern</h4>
+                      <button class="abroadButton">
+                        <div>
+                          <h4>Semester In Amsterdam</h4>
+                          <h6>Vrije Universitait</h6>
                         </div>
-                        <div class="epicDescription">
-                          <ul>
-                            <li>Something about Epic</li>
-                            <li>something else about epic</li>
-                          </ul>
-                        </div>
-                        <img src="media/epicLogo.png"/>
-                      </div>
+                        <h4>Feb-May 2023</h4>
+                      </button>
                       <div class="abroadBox">
-                        <h4>Semester In Amsterdam</h4>
+                        <ul>
+                          <li>Studied Text Mining for AI and Computer Networks at <span>Vrije Universetait</span></li>
+                          <li>Built a named entity recognition system using a Support Vector Machine (SVM) approach</li>
+                          <li>Built various networking clients and servers ... ADD MORE</li>
+                          <li>Volunteered weekly to mentor <span>Dutch</span> students in after school program.</li>
+                        </ul>
                       </div>
-                      <div class="tutorBox">
-                        <h4>Grinnell College</h4>
-                        <h2>Computer Science Tutor</h2>
-                        <div class="tutorDescription">
-                          <ul>
-                            <li>Something about Epic</li>
-                            <li>something else about epic</li>
-                          </ul>
+                      <button class="tutorButton">
+                        <div>
+                          <h4>Computer Science Tutor</h4>
+                          <h6>Grinnell College</h6>
                         </div>
+                        <h4>Aug 2021 - Present</h4>
+                      </button>
+                      <div class="tutorBox">
+                        <ul>
+                          <li>Something about Epic</li>
+                          <li>something else about epic</li>
+                        </ul>
                       </div>
+                      <button class="internButton">
+                        <div>
+                          <h4>Software Development Intern</h4>
+                          <h6>Epic Systems</h6>
+                        </div>
+                        <h4>Jun-Aug 2023</h4>
+                      </button>
+                      <div class="internBox">
+                        <ul>
+                          <li>Something about Epic</li>
+                          <li>something else about epic</li>
+                        </ul>
+                      </div>
+                    </div>
                     </div>
                   </div>
               </div>
@@ -221,5 +238,6 @@
     <script src="scripts/cardflip.js"></script>
     <script src="scripts/tabs.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/experiences.js"></script>
 </body>
 </html>

@@ -1,30 +1,82 @@
 .experienceBox {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(255,255,255,1) 30%, darkgray 120%);
-}
-.epicTop {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-    padding-top: 10px;
-    font-size: 24px;
-}
-.epicTop h4 {
-    font-weight: 300;
-}
-
-.epicBox {
+    height: 100%;
     display: flex;
     flex-direction: column;
+}
+.tutorButton, .abroadButton, .internButton {
+    width: 100%;
+    height: 10%;
+    border: 0;
+    border-bottom: 1px solid darkgray;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    font-size: 24px;
+    padding: 0px 10px;
+    box-shadow: 0px 1px 2px darkgray;
 }
-.epicDescription {
-    background-color: lightblue;
-    align-self:flex-start;
+.abroadButton {
+    border-top: 1px solid darkgray;
 }
-.epicBox img {
+.tutorButton div, .abroadButton div, .internButton div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.tutorButton div h4, .abroadButton div h4, .internButton div h4 {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.tutorButton div h6, .abroadButton div h6, .internButton div h6 {
+    font-weight: 400;
+    margin: 0;
+}
+.tutorButton h4, .abroadButton h4, .internButton h4 {
+    font-weight: 400;
+}
+.tutorBox, .abroadBox, .internBox {
+    width: 100%;
+}
+.tutorBox {
+    height: 0;
+    overflow: hidden;
+    transition: height .5s ease;
+    background: url(/media/grinnellLogo.png) center center no-repeat;
+    background-size: 300px 200px;
+}
+.abroadBox {
+    height: 0;
+    overflow: hidden;
+    transition: height .5s ease;
+    background: url(/media/vuLogoTransp.png) center center no-repeat;
+    background-size: 480px 360px;
+}
+.internBox {
+    height: 70%;
+    overflow: hidden;
+    transition: height .5s ease;
+    background: url(/media/epicLogoTrans.png) center center no-repeat;
+    background-size: 467px 180px;
+}
+.tutorButton:hover, .abroadButton:hover, .internButton:hover {
+    cursor: pointer;
+    background-color: #999999;
+}
+.tutorButton:active, .abroadButton:active, .internButton:active {
+    box-shadow: inset 0px 0px 3px black;
+}
+
+.internBox img {
     width: 200px;
+}
+
+ul {
+    list-style-type:square;
+}
+li {
+    padding-bottom: 10px;
 }
