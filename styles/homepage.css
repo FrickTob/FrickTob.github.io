@@ -19,6 +19,9 @@
     min-width: 800px;
     color: black;
     position: relative;
+    display: none;
+    opacity: .5;
+    transition: opacity 1s ease;
 }
 .card {
     position: relative;

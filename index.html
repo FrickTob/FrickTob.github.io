@@ -8,32 +8,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/universal/general.css">
-    <link rel="stylesheet" href="styles/universal/header.css">
-
+    <link rel="stylesheet" href="styles/greeting.css">
     <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/project-grid.css">
-
     <link rel="stylesheet" href="styles/backLeft.css">
-
     <link rel="stylesheet" href="styles/tabs/tabs.css">
     <link rel="stylesheet" href="styles/tabs/educationTab.css">
     <link rel="stylesheet" href="styles/tabs/experienceTab.css">
     <link rel="stylesheet" href="styles/tabs/skillsTab.css">
+    <link rel="icon" href="icons/redhead.png" type="image/png">
     
 
 </head>
 <body class="homepage-body">
-    <header class="header">
-            <div class="left-header">
-                TF
-            </div>
-            <div class="middle-header">
-              <div>Hi, I'm Toby. Here's my card.</div>
-            </div>
-    </header>
-    <!--<div class="cardTitle">Hi, I'm Toby. <br> Don't Know Me? Here's My Card.</div>-->
     <main class="homepage-main">
-        <div id="pageTop" class="cardBox">
+        <div id="greetingBox" class="greetingBox">
+          <div class="typingBox"><span id='firstMessage' class="firstMessage"></span><span id="cursor" class="cursor"></span></div>
+          <button id="acceptCardButton" class="acceptCardButton">Accept Card</button>
+        </div>
+        <div id="cardBox" class="cardBox">
             <button id="flipButton" class="flipSpace">
               <img class="flipIcon" src="icons/rotate-icon.png" />
               <div class="flipButton">Flip Card</div>
@@ -201,7 +194,7 @@
                         <ul>
                           <li>Studied Text Mining for AI and Computer Networks</li>
                           <li>Built a named entity recognition system using a Support Vector Machine (SVM) approach</li>
-                          <li>Built networking clients and servuers... ADD MORE</li>
+                          <li>Built networking clients and servers... To Be Continued after the semester is oveer</li>
                         </ul>
                       </div>
                       <button class="tutorButton">
@@ -227,8 +220,8 @@
                       </button>
                       <div class="internBox">
                         <ul>
-                          <li>Something about Epic</li>
-                          <li>something else about epic</li>
+                          <li>Under Construction...</li>
+                          <li>Pardon the Mess</li>
                         </ul>
                       </div>
                     </div>
@@ -243,5 +236,6 @@
     <script src="scripts/tabs.js"></script>
     <script src="scripts/links.js"></script>
     <script src="scripts/experiences.js"></script>
+    <script src="scripts/greeting.js"></script>
 </body>
 </html>
