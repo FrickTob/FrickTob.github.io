@@ -117,13 +117,16 @@
     font-size: 24px;
     font-weight: 500;
     margin: 0% 15%;
-    transition: background-color .1s;
+    transition: background-color .15s, color .15s;
 }
 .resumeButton:hover {
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #2E8B57;
+    color: white;
 }
 .resumeButton:active {
+    background-color: #2E8B57;
+    color: white;
     box-shadow: inset 0px 0px 4px black;
 }
 .contactBox img:hover, .contactBox button:hover {

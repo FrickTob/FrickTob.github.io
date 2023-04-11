@@ -35,11 +35,16 @@
     box-shadow: -1px 1px 2px black;
     height: fit-content;
     text-decoration: none;
+    transition: background-color .15s, color .15s, box-shadow .15s;
 }
 .devJournalText:hover {
-    background-color: rgb(130, 130, 130);
+    cursor: pointer;
+    background-color: #2E8B57;
+    color: white;
 }
 .devJournalText:active {
+    background-color: #2E8B57;
+    color: white;
     box-shadow: inset -1px 1px 2px black;
 }
 
