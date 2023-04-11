@@ -14,7 +14,6 @@
 }
 
 .projectBox img:hover {
-    background-color: #CCCCCC;
     cursor: pointer;
     opacity: .3;
 }
@@ -52,6 +51,7 @@
     bottom: 0;
     text-align: center;
     color: white;
+    opacity: 1;
 }
 .projectBox1, .projectImg1 {
     border-top-left-radius: 15%;

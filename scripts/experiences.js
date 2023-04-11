@@ -6,18 +6,18 @@ var tutorBox = document.querySelector('.tutorBox');
 var internBox = document.querySelector('.internBox');
 
 tutorButton.addEventListener('click', function() {
-    tutorBox.style.height = '70%';
+    tutorBox.style.height = '55%';
     abroadBox.style.height = '0';
     internBox.style.height = '0';
 });
 
 abroadButton.addEventListener('click', function() {
     tutorBox.style.height = '0';
-    abroadBox.style.height = '70%';
+    abroadBox.style.height = '55%';
     internBox.style.height = '0';
 });
 internButton.addEventListener('click', function() {
     tutorBox.style.height = '0';
     abroadBox.style.height = '0';
-    internBox.style.height = '70%';
+    internBox.style.height = '55%';
 });

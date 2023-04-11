@@ -16,27 +16,27 @@ function render(tabId) {
         tab2.className = 'tab2';
         tab3.className = 'tab3';
 
-        skillsTabContent.className = 'showTabContent';
+        experienceTabContent.className = 'showTabContent';
         educationTabContent.className = 'hideTabContent';
-        experienceTabContent.className = 'hideTabContent';
+        skillsTabContent.className = 'hideTabContent';
     }
     else if (tabId === "tab2") {
         tab1.className = 'tab1';
         tab2.className = 'selectedTab';
         tab3.className = 'tab3';
 
-        skillsTabContent.className = 'hideTabContent';
-        educationTabContent.className = 'showTabContent';
         experienceTabContent.className = 'hideTabContent';
+        educationTabContent.className = 'showTabContent';
+        skillsTabContent.className = 'hideTabContent';
     }
     else { // tabId == "tab3"
         tab1.className = 'tab1';
         tab2.className = 'tab2';
         tab3.className = 'selectedTab';
         
-        skillsTabContent.className = 'hideTabContent';
+        experienceTabContent.className = 'hideTabContent';
         educationTabContent.className = 'hideTabContent';
-        experienceTabContent.className = 'showTabContent';
+        skillsTabContent.className = 'showTabContent';
     }
 }
 

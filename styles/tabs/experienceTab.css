@@ -6,7 +6,7 @@
 }
 .tutorButton, .abroadButton, .internButton {
     width: 100%;
-    height: 10%;
+    height: 15%;
     border: 0;
     border-bottom: 1px solid darkgray;
     background-color: #EEEEEE;
@@ -20,6 +20,26 @@
 .abroadButton {
     border-top: 1px solid darkgray;
 }
+.chessImgAnchor {
+    position: relative;
+    font-weight: 500;
+}
+.chessImgAnchor:hover .chessImg {
+    visibility: visible;
+    opacity: 1;
+}
+.chessImg {
+    position: absolute;
+    visibility: hidden;
+    left: 50px;
+    top: 30px;
+    width: 180px;
+    opacity: 0;
+    box-shadow: -2px 2px 2px darkgray;
+    border-radius: 20px;
+    box-shadow: 0px ;
+    transition: opacity .15s;
+}
 .tutorButton div, .abroadButton div, .internButton div {
     height: 100%;
     display: flex;
@@ -27,12 +47,15 @@
     justify-content: center;
     align-items: start;
 }
+
 .tutorButton div h4, .abroadButton div h4, .internButton div h4 {
     font-weight: 400;
     margin-bottom: 5px;
 }
 .tutorButton div h6, .abroadButton div h6, .internButton div h6 {
     font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
     margin: 0;
 }
 .tutorButton h4, .abroadButton h4, .internButton h4 {
@@ -48,12 +71,41 @@
     background: url(/media/grinnellLogo.png) center center no-repeat;
     background-size: 300px 200px;
 }
+.tutorBox ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+.tutorBox p {
+    margin: 0px 5%;
+    font-size: 20px;
+}
 .abroadBox {
     height: 0;
     overflow: hidden;
     transition: height .5s ease;
-    background: url(/media/vuLogoTransp.png) center center no-repeat;
-    background-size: 480px 360px;
+    background: url(/media/vuGriff.png) center center no-repeat;
+    background-size: 200px 200px;
+}
+.abroadBox p {
+    margin: 20px 5%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+.abroadBox h6 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 400;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+.abroadBox ul{
+    font-size: 18px;
+    margin: 0 5%;
 }
 .internBox {
     height: 70%;
