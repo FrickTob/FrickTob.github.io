@@ -28,17 +28,31 @@ const fadeIn = (element) => {
     }, 100)
   }
   async function typeMessage() {
-    await waitForMs(200)
+    await waitForMs()
     await typeSentence("Hi! Here's My Interactive Resume!")
-    await waitForMs(300)
-    await deleteLetters("! Here's My Interactive Resume!")
-    await waitForMs(200)
-    await typeSentence(", I'm Toby. Here's My Card.", delay = 100)
-    await waitForMs(300)
+    await waitForMs()
+    await deleteLetters("Hi! Here's My Interactive Resume!")
+    await waitForMs()
+    await typeSentence("No. Too many exclamation marks.")
+    await waitForMs()
+    await deleteLetters("No. Too many exclamation marks.")
+    await waitForMs()
+    await typeSentence("Looking for a capable developer? Try me!")
+    await waitForMs()
+    await deleteLetters("Looking for a capable developer? Try me!")
+    await waitForMs()
+    await typeSentence("No. Too eager.")
+    await waitForMs()
+    await deleteLetters("No. Too eager.")
+    await waitForMs()
+    await typeSentence("Hi, I'm Toby. Here's My Card.")
+    await waitForMs(1000)
+    await deleteLetters("Hi, I'm Toby. Here's My Card.")
+    await waitForMs()
+    await typeSentence("Nailed it")
     await removeCursor()
-    //await displayButton()
   }
-  async function typeSentence(message, delay = 50) {
+  async function typeSentence(message, delay = 100) {
     sentence = "" + message
     const letters = sentence.split("");
     let i = 0;
@@ -62,14 +76,10 @@ const fadeIn = (element) => {
   }
   
   
-  function waitForMs(ms) {
+  function waitForMs(ms = 300) {
     return new Promise(resolve => setTimeout(resolve, ms))
   }
 
   async function removeCursor() {
     cursor.style.display = 'none';
-  }
-
-  async function displayButton() {
-    fadeIn(acceptCardButton)
   }

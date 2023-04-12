@@ -51,10 +51,7 @@
     font-size: 64px;
 }
 
-@keyframes blink {
-    0% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 0;}
-    100% {opacity: 0;}
+@keyframes cursor-blink {
+    0% {opacity: 0;}
   }
 
