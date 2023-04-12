@@ -255,10 +255,13 @@ margin-top: 30px;
 }
 .flipSpace:hover {
     cursor: pointer;
-    background-color: #555555;
+    background-color: #2E8B57;
+    color: white;
 }
 .flipSpace:active {
     box-shadow: inset 0px 0px 3px black;
+    background-color: #2E8B57;
+    color: white;
 }
 .flipIcon {
     width: 50px;

@@ -32,24 +32,24 @@ const fadeIn = (element) => {
     await typeSentence("Hi! Here's My Interactive Resume!")
     await waitForMs()
     await deleteLetters("Hi! Here's My Interactive Resume!")
-    await waitForMs()
+    await waitForMs(600)
     await typeSentence("No. Too many exclamation marks.")
     await waitForMs()
     await deleteLetters("No. Too many exclamation marks.")
     await waitForMs()
     await typeSentence("Looking for a capable developer? Try me!")
-    await waitForMs()
+    await waitForMs(600)
     await deleteLetters("Looking for a capable developer? Try me!")
     await waitForMs()
-    await typeSentence("No. Too eager.")
+    await typeSentence("No. Too eager. Play it cool.")
     await waitForMs()
-    await deleteLetters("No. Too eager.")
+    await deleteLetters("No. Too eager. Play it cool.")
     await waitForMs()
     await typeSentence("Hi, I'm Toby. Here's My Card.")
     await waitForMs(1000)
     await deleteLetters("Hi, I'm Toby. Here's My Card.")
     await waitForMs()
-    await typeSentence("Nailed it")
+    await typeSentence("Nailed it.")
     await removeCursor()
   }
   async function typeSentence(message, delay = 100) {
@@ -79,7 +79,6 @@ const fadeIn = (element) => {
   function waitForMs(ms = 300) {
     return new Promise(resolve => setTimeout(resolve, ms))
   }
-
   async function removeCursor() {
     cursor.style.display = 'none';
   }
