@@ -108,7 +108,7 @@
     margin: 0 5%;
 }
 .internBox {
-    height: 70%;
+    height: 55%;
     overflow: hidden;
     transition: height .5s ease;
     background: url(/media/epicLogoTrans.png) center center no-repeat;
