@@ -12,6 +12,7 @@ window.addEventListener('load', () => {
     case "landscape-secondary":
       changeOrientationMessage.style.display = 'none'
       greetingBox.style.display = 'flex';
+      typeMessage()
       break;
     case "portrait-primary":
     case "portrait-secondary":
@@ -30,9 +31,9 @@ window.addEventListener('load', () => {
         changeOrientationMessage.style.display = 'none'
         greetingBox.style.display = 'flex';
         cardBox.style.display = 'none';
+        typeMessage()
       }
   }
-  typeMessage()
 })
 screen.orientation.addEventListener('change', () => {
   alert('screen changed orientation')
@@ -49,6 +50,7 @@ screen.orientation.addEventListener('change', () => {
         changeOrientationMessage.style.display = 'none'
         greetingBox.style.display = 'flex';
         cardBox.style.display = 'none';
+        typeMessage()
       }
       break;
     case "portrait-primary":
@@ -68,10 +70,10 @@ screen.orientation.addEventListener('change', () => {
         changeOrientationMessage.style.display = 'none'
         greetingBox.style.display = 'flex';
         cardBox.style.display = 'none';
+        typeMessage()
       }
       break;
     }
-    typeMessage()
 })
 
 
