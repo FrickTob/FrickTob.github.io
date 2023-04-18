@@ -7,7 +7,6 @@ const cursor = document.getElementById('cursor')
 
 var hasAcceptedCard = false
 window.addEventListener('load', () => {
-  alert('loaded!')
   switch (screen.orientation.type) {
     case "landscape-primary":
     case "landscape-secondary":
@@ -35,8 +34,9 @@ window.addEventListener('load', () => {
       break;
   
     default:
-      console.log("Orientation Not FOund");
+      console.log("Orientation Not Found");
   }
+  console.log('here')
     typeMessage()
 })
 screen.orientation.addEventListener('change', () => {
