@@ -1,11 +1,80 @@
+const changeOrientationMessage = document.getElementById('verticalScreenMessage')
 const greetingBox = document.getElementById('greetingBox')
 const acceptCardButton = document.getElementById('acceptCardButton')
 const cardBox = document.getElementById('cardBox')
 const firstMessage = document.getElementById('firstMessage')
 const cursor = document.getElementById('cursor')
 
+var hasAcceptedCard = false
+
 window.addEventListener('load', () => {
+  switch (screen.orientation.type) {
+    case "landscape-primary":
+    case "landscape-secondary":
+      changeOrientationMessage.style.display = 'none'
+      greetingBox.style.display = 'flex';
+      break;
+    case "portrait-primary":
+    case "portrait-secondary":
+      if(window.innerWidth < 1000) {
+        changeOrientationMessage.style.display = 'block'
+        changeOrientationMessage.innerHTML = 'Please rotate your device to landscape mode for best experience.'
+        greetingBox.style.display = 'none';
+        cardBox.style.display = 'none';
+      }
+      else if (hasAcceptedCard) {
+      changeOrientationMessage.style.display = 'none'
+      cardBox.style.display = 'block';
+      greetingBox.style.display = 'none';
+      }
+      else {
+        changeOrientationMessage.style.display = 'none'
+        greetingBox.style.display = 'flex';
+        cardBox.style.display = 'none';
+      }
+      break;
+  
+    default:
+      console.log("Orientation Not FOund");
+  }
     typeMessage()
+})
+screen.orientation.addEventListener('change', () => {
+  console.log(screen.orientation.type)
+  switch (screen.orientation.type) {
+    case "landscape-primary":
+    case "landscape-secondary":
+      if (hasAcceptedCard) {
+        changeOrientationMessage.style.display = 'none'
+        cardBox.style.display = 'block';
+        greetingBox.style.display = 'none';
+      }
+      else {
+        changeOrientationMessage.style.display = 'none'
+        greetingBox.style.display = 'flex';
+        cardBox.style.display = 'none';
+      }
+      break;
+    case "portrait-primary":
+    case "portrait-secondary":
+      if(window.innerWidth < 1000) {
+        changeOrientationMessage.style.display = 'block'
+        changeOrientationMessage.innerHTML = 'Please rotate your device to landscape mode for best experience.'
+        greetingBox.style.display = 'none';
+        cardBox.style.display = 'none';
+      }
+      else if (hasAcceptedCard) {
+      changeOrientationMessage.style.display = 'none'
+      cardBox.style.display = 'block';
+      greetingBox.style.display = 'none';
+      }
+      else {
+        changeOrientationMessage.style.display = 'none'
+        greetingBox.style.display = 'flex';
+        cardBox.style.display = 'none';
+      }
+      break;
+    }
 })
 
 
@@ -13,6 +82,7 @@ acceptCardButton.onclick = () => {
     greetingBox.style.display = 'none';
     cardBox.style.display = 'block';
     fadeIn(cardBox)
+    hasAcceptedCard = true
 }
 
 const fadeIn = (element) => {
@@ -74,7 +144,6 @@ const fadeIn = (element) => {
     }
     return;
   }
-  
   
   function waitForMs(ms = 300) {
     return new Promise(resolve => setTimeout(resolve, ms))
