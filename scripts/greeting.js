@@ -31,12 +31,8 @@ window.addEventListener('load', () => {
         greetingBox.style.display = 'flex';
         cardBox.style.display = 'none';
       }
-      break;
-  
-    default:
-      console.log("Orientation Not Found");
   }
-  console.log('here')
+  alert('here!')
     typeMessage()
 })
 screen.orientation.addEventListener('change', () => {
@@ -75,6 +71,7 @@ screen.orientation.addEventListener('change', () => {
       }
       break;
     }
+    typeMessage()
 })
 
 
