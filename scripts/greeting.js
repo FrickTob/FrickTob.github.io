@@ -32,10 +32,10 @@ window.addEventListener('load', () => {
         cardBox.style.display = 'none';
       }
   }
-  alert('here!')
-    typeMessage()
+  typeMessage()
 })
 screen.orientation.addEventListener('change', () => {
+  alert('screen changed orientation')
   console.log(screen.orientation.type)
   switch (screen.orientation.type) {
     case "landscape-primary":
@@ -95,6 +95,7 @@ const fadeIn = (element) => {
     }, 100)
   }
   async function typeMessage() {
+    firstMessage.innerHTML = ""
     await waitForMs()
     await typeSentence("Hi! Here's My Interactive Resume!")
     await waitForMs()
