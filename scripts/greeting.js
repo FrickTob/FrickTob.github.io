@@ -6,7 +6,6 @@ const firstMessage = document.getElementById('firstMessage')
 const cursor = document.getElementById('cursor')
 
 var hasAcceptedCard = false
-alert("hello")
 window.addEventListener('load', () => {
   switch (screen.orientation.type) {
     case "landscape-primary":
