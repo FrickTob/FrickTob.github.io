@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
     case "portrait-primary":
     case "portrait-secondary":
       if(window.innerWidth < 1000) {
-        changeOrientationMessage.style.display = 'block'
+        changeOrientationMessage.style.display = 'flex'
         changeOrientationMessage.innerHTML = 'Please rotate your device to landscape mode for best experience.'
         greetingBox.style.display = 'none';
         cardBox.style.display = 'none';
@@ -47,7 +47,7 @@ screen.orientation.addEventListener('change', () => {
         greetingBox.style.display = 'none';
       }
       else {
-        changeOrientationMessage.style.display = 'none'
+        changeOrientationMessage.style.display = 'flex'
         greetingBox.style.display = 'flex';
         cardBox.style.display = 'none';
         typeMessage()
@@ -56,7 +56,7 @@ screen.orientation.addEventListener('change', () => {
     case "portrait-primary":
     case "portrait-secondary":
       if(window.innerWidth < 1000) {
-        changeOrientationMessage.style.display = 'block'
+        changeOrientationMessage.style.display = 'flex'
         changeOrientationMessage.innerHTML = 'Please rotate your device to landscape mode for best experience.'
         greetingBox.style.display = 'none';
         cardBox.style.display = 'none';
