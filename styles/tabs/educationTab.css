@@ -127,6 +127,7 @@ justify-content: center;
 .extracurricularBox span {
     position:relative;
     font-weight: 600;
+    text-decoration: underline;
 }
 .extracurricularBox span:hover .diveImg {
     visibility: visible;

@@ -26,9 +26,6 @@
     background-color: black;
     transition: opacity .15s;
 }
-.projectImg1 {
-    object-position: 0px 0px;
-}
 .projectBox div {
     position: relative;
     background-color: white;
