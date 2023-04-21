@@ -47,3 +47,7 @@
     display: block;
     height: 100%;
 }
+
+.internButton div h4, .tutorButton div h4, .abroadButton div h4 {
+    font-size: 30px;
+}

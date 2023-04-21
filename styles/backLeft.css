@@ -91,6 +91,7 @@
     width: 100%;
     height: 100%;  
 }
+
 .interestsGrid div div::before {
     content:"";
     height: 100%;
