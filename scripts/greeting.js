@@ -78,6 +78,7 @@ screen.orientation.addEventListener('change', () => {
 
 
 acceptCardButton.onclick = () => {
+    console.log("clicked!")
     greetingBox.style.display = 'none';
     cardBox.style.display = 'block';
     fadeIn(cardBox)
