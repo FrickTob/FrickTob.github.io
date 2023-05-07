@@ -7,88 +7,64 @@ const cursor = document.getElementById('cursor')
 
 var hasAcceptedCard = false
 alert('script runs')
+
 window.addEventListener('DOMContentLoaded', () => {
   alert('runs here')
   console.log(screen.orientation.type)
-  switch (screen.orientation.type) {
-    case "landscape-primary":
-    case "landscape-secondary":
-      changeOrientationMessage.style.display = 'none'
-      greetingBox.style.display = 'flex';
-      typeMessage()
-      break;
-    case "portrait-primary":
-    case "portrait-secondary":
-      if(window.innerWidth < 1000) {
-        changeOrientationMessage.style.display = 'flex'
-        changeOrientationMessage.innerHTML = 'Please rotate your device to landscape mode for best experience.'
-        greetingBox.style.display = 'none';
-        cardBox.style.display = 'none';
-      }
-      else if (hasAcceptedCard) {
-      changeOrientationMessage.style.display = 'none'
-      cardBox.style.display = 'block';
-      greetingBox.style.display = 'none';
-      }
-      else {
-        changeOrientationMessage.style.display = 'none'
-        greetingBox.style.display = 'flex';
-        cardBox.style.display = 'none';
-        typeMessage()
-      }
-  }
-})
-screen.orientation.addEventListener('change', () => {
-  alert('orientation change')
-  console.log(screen.orientation.type)
-  switch (screen.orientation.type) {
-    case "landscape-primary":
-    case "landscape-secondary":
-      if (hasAcceptedCard) {
-        changeOrientationMessage.style.display = 'none'
-        cardBox.style.display = 'block';
-        greetingBox.style.display = 'none';
-      }
-      else {
-        changeOrientationMessage.style.display = 'flex'
-        greetingBox.style.display = 'flex';
-        cardBox.style.display = 'none';
-        typeMessage()
-      }
-      break;
-    case "portrait-primary":
-    case "portrait-secondary":
-      if(window.innerWidth < 1000) {
-        changeOrientationMessage.style.display = 'flex'
-        changeOrientationMessage.innerHTML = 'Please rotate your device to landscape mode for best experience.'
-        greetingBox.style.display = 'none';
-        cardBox.style.display = 'none';
-      }
-      else if (hasAcceptedCard) {
-      changeOrientationMessage.style.display = 'none'
-      cardBox.style.display = 'block';
-      greetingBox.style.display = 'none';
-      }
-      else {
-        changeOrientationMessage.style.display = 'none'
-        greetingBox.style.display = 'flex';
-        cardBox.style.display = 'none';
-        typeMessage()
-      }
-      break;
+
+    portrait = window.matchMedia("(orientation: portrait)").matches;
+    if (portrait && window.innerWidth < 1000) {
+      showVerticalScreenMessage()
+    } else if (hasAcceptedCard) {
+      showHorizontalandButtonPressed()
     }
-})
+    else {
+      showHorizontalandButtonNotPressed()
+    }
+  });
+  
+  window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
+    const portrait = e.matches;
 
+    if (portrait && window.innerWidth < 1000) {
+        showVerticalScreenMessage()
+    } else if (hasAcceptedCard) {
+      showHorizontalandButtonPressed()
+    }
+    else {
+      showHorizontalandButtonNotPressed()
+    }
+});
 
-acceptCardButton.onclick = () => {
-    alert('clicked')
-    console.log("clicked!")
-    greetingBox.style.display = 'none';
-    cardBox.style.display = 'block';
-    fadeIn(cardBox)
-    hasAcceptedCard = true
+showVerticalScreenMessage = () => {
+  changeOrientationMessage.style.display = 'flex'
+  changeOrientationMessage.innerHTML = 'Please rotate your device to landscape mode for best experience.'
+  greetingBox.style.display = 'none';
+  cardBox.style.display = 'none';
 }
-acceptCardButton.ontouch
+
+showHorizontalandButtonPressed = () => {
+  changeOrientationMessage.style.display = 'none'
+  cardBox.style.display = 'block';
+  greetingBox.style.display = 'none';
+}
+
+showHorizontalandButtonNotPressed = () => {
+  changeOrientationMessage.style.display = 'none'
+  greetingBox.style.display = 'flex';
+  cardBox.style.display = 'none';
+  typeMessage()
+}
+
+
+acceptCardButton.addEventListener('click', () => {
+  alert('clicked')
+  console.log("clicked!")
+  greetingBox.style.display = 'none';
+  cardBox.style.display = 'block';
+  fadeIn(cardBox)
+  hasAcceptedCard = true
+})
 
 const fadeIn = (element) => {
     var i = 0;
