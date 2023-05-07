@@ -6,11 +6,8 @@ const firstMessage = document.getElementById('firstMessage')
 const cursor = document.getElementById('cursor')
 
 var hasAcceptedCard = false
-alert('script runs')
 
 window.addEventListener('DOMContentLoaded', () => {
-  alert('runs here')
-  console.log(screen.orientation.type)
 
     portrait = window.matchMedia("(orientation: portrait)").matches;
     if (portrait && window.innerWidth < 1000) {
@@ -22,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
       showHorizontalandButtonNotPressed()
     }
   });
-  
+
   window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
     const portrait = e.matches;
 
@@ -58,8 +55,6 @@ showHorizontalandButtonNotPressed = () => {
 
 
 acceptCardButton.addEventListener('click', () => {
-  alert('clicked')
-  console.log("clicked!")
   greetingBox.style.display = 'none';
   cardBox.style.display = 'block';
   fadeIn(cardBox)
