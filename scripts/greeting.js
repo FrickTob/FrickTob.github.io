@@ -6,7 +6,9 @@ const firstMessage = document.getElementById('firstMessage')
 const cursor = document.getElementById('cursor')
 
 var hasAcceptedCard = false
+alert('script runs')
 window.addEventListener('DOMContentLoaded', () => {
+  alert('runs here')
   console.log(screen.orientation.type)
   switch (screen.orientation.type) {
     case "landscape-primary":
@@ -37,6 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 })
 screen.orientation.addEventListener('change', () => {
+  alert('orientation change')
   console.log(screen.orientation.type)
   switch (screen.orientation.type) {
     case "landscape-primary":
@@ -78,6 +81,7 @@ screen.orientation.addEventListener('change', () => {
 
 
 acceptCardButton.onclick = () => {
+    alert('clicked')
     console.log("clicked!")
     greetingBox.style.display = 'none';
     cardBox.style.display = 'block';
