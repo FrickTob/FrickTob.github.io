@@ -7,59 +7,37 @@ const cursor = document.getElementById('cursor')
 
 var hasAcceptedCard = false
 
+const isMobile = window.matchMedia('(max-width: 767px)').matches;
 window.addEventListener('DOMContentLoaded', () => {
-
-    portrait = window.matchMedia("(orientation: portrait)").matches;
-    if (portrait && window.innerWidth < 1000) {
-      showVerticalScreenMessage()
-    } else if (hasAcceptedCard) {
-      showHorizontalandButtonPressed()
-    }
-    else {
-      showHorizontalandButtonNotPressed()
-    }
+  if (isMobile) mobileMessage()
+  else displayButtonNotPressed()
   });
 
-  window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
-    const portrait = e.matches;
-
-    if (portrait && window.innerWidth < 1000) {
-        showVerticalScreenMessage()
-    } else if (hasAcceptedCard) {
-      showHorizontalandButtonPressed()
-    }
-    else {
-      showHorizontalandButtonNotPressed()
-    }
-});
-
-showVerticalScreenMessage = () => {
+mobileMessage = () => {
   changeOrientationMessage.style.display = 'flex'
-  changeOrientationMessage.innerHTML = 'Please rotate your device to landscape mode for best experience.'
+  changeOrientationMessage.innerHTML = 'This Site is Not Optimized for Mobile, Please View on a Desktop for Best Experience'
   greetingBox.style.display = 'none';
   cardBox.style.display = 'none';
 }
 
-showHorizontalandButtonPressed = () => {
+acceptCardButton.addEventListener('click', () => {
+  displayButtonPressed()
+  hasAcceptedCard = true
+})
+
+displayButtonPressed = () => {
   changeOrientationMessage.style.display = 'none'
   cardBox.style.display = 'block';
   greetingBox.style.display = 'none';
+  fadeIn(cardBox)
 }
 
-showHorizontalandButtonNotPressed = () => {
+displayButtonNotPressed = () => {
   changeOrientationMessage.style.display = 'none'
   greetingBox.style.display = 'flex';
   cardBox.style.display = 'none';
   typeMessage()
 }
-
-
-acceptCardButton.addEventListener('click', () => {
-  greetingBox.style.display = 'none';
-  cardBox.style.display = 'block';
-  fadeIn(cardBox)
-  hasAcceptedCard = true
-})
 
 const fadeIn = (element) => {
     var i = 0;
