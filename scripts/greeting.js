@@ -6,7 +6,7 @@ const firstMessage = document.getElementById('firstMessage')
 const cursor = document.getElementById('cursor')
 
 var hasAcceptedCard = false
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
   console.log(screen.orientation.type)
   switch (screen.orientation.type) {
     case "landscape-primary":
@@ -84,6 +84,7 @@ acceptCardButton.onclick = () => {
     fadeIn(cardBox)
     hasAcceptedCard = true
 }
+acceptCardButton.ontouch
 
 const fadeIn = (element) => {
     var i = 0;
