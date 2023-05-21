@@ -1,3 +1,9 @@
+.collapse {
+    height: 0;
+    overflow:hidden;
+    transition: height .5s ease;
+}
+
 .experienceBox {
     width: 100%;
     height: 100%;
@@ -66,16 +72,10 @@
     width: 100%;
 }
 .tutorBox {
-    height: 0;
-    overflow: hidden;
-    transition: height .5s ease;
     background: url(/media/grinnellLogo.png) center center no-repeat;
     background-size: 300px 200px;
 }
 .abroadBox {
-    height: 0;
-    overflow: hidden;
-    transition: height .5s ease;
     background: url(/media/vuGriff.png) center center no-repeat;
     background-size: 200px 200px;
 }
@@ -99,8 +99,6 @@
 }
 .internBox {
     height: 55%;
-    overflow: hidden;
-    transition: height .5s ease;
     background: url(/media/epicLogoTrans.png) center center no-repeat;
     background-size: 467px 180px;
 }
@@ -122,3 +120,4 @@ ul {
 li {
     padding-bottom: 10px;
 }
+

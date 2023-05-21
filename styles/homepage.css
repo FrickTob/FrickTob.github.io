@@ -15,8 +15,8 @@
     aspect-ratio: 3.5/2;
     margin-left: 200px;
     margin-right: 200px;
-    background: none;
     min-width: 800px;
+    background: none;
     color: black;
     position: relative;
     display: none;
@@ -36,9 +36,13 @@
 }
 .flipcard {
     transform: rotateY(180deg);
+    box-shadow: -1px 1px 15px black
 }
 
-
+.cardFront, .cardBack {
+    transition: box-shadow .5s;
+    box-shadow: -10px 10px 15px black;
+}
 
 /* Front */
 .cardFront {
@@ -48,7 +52,6 @@
     backface-visibility: hidden;
     display: grid;
     grid-template-columns: 60% 40%;
-    box-shadow: -5px 5px 15px black;
 }
 
 /* Front Left Side */
@@ -217,7 +220,6 @@ margin-top: 30px;
     transform: rotateY(180deg);
     display: grid;
     grid-template-columns: 40% 60%;
-    box-shadow: -5px 5px 15px black;
 }
 
 /* Back Left Card */
@@ -231,6 +233,7 @@ margin-top: 30px;
     background-color: white;
     display: grid;
     grid-template-rows: 50px 1fr;
+    height: 100%;
 }
 
 /* Flip Card Button */
