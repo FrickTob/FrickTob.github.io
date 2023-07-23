@@ -1,7 +1,6 @@
 .collapse {
     height: 0;
     overflow:hidden;
-    transition: height .5s ease;
 }
 
 .experienceBox {
@@ -79,13 +78,13 @@
     background: url(/media/vuGriff.png) center center no-repeat;
     background-size: 200px 200px;
 }
-.abroadBox p, .tutorBox p {
+.abroadBox p, .tutorBox p, .internBox p {
     margin: 10px 5%;
     font-size: 18px;
     text-align: center;
     line-height: 1.5;
 }
-.abroadBox h6, .tutorBox h6 {
+.abroadBox h6, .tutorBox h6, .internBox h6 {
     font-size: 20px;
     margin: 0;
     font-weight: 400;
@@ -93,7 +92,7 @@
     margin-bottom: 10px;
 }
 
-.abroadBox ul, .tutorBox ul {
+.abroadBox ul, .tutorBox ul, .internBox ul {
     font-size: 18px;
     margin: 0 5%;
 }

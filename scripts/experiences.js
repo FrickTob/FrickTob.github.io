@@ -11,9 +11,6 @@ tutorButton.addEventListener('click', function() {
     tutorBox.style.height = '55%';
     abroadBox.style.height = '0';
     internBox.style.height = '0';
-    experienceBox.style.height = experienceBox.clientHeight
-    waitForMs(500)
-    experienceBox.style.height = '100%'
 });
 
 abroadButton.addEventListener('click', function() {
@@ -25,7 +22,4 @@ internButton.addEventListener('click', function() {
     tutorBox.style.height = '0';
     abroadBox.style.height = '0';
     internBox.style.height = '55%';
-    experienceBox.style.height = experienceBox.clientHeight
-    waitForMs(500)
-    experienceBox.style.height = '100%'
 });
