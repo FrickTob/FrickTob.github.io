@@ -78,6 +78,13 @@
     background: url(/media/vuGriff.png) center center no-repeat;
     background-size: 200px 200px;
 }
+
+.internBox {
+    height: 55%;
+    background: url(/media/epicLogoTrans.png) center center no-repeat;
+    background-size: 467px 180px;
+}
+
 .abroadBox p, .tutorBox p, .internBox p {
     margin: 10px 5%;
     font-size: 18px;
@@ -96,11 +103,7 @@
     font-size: 18px;
     margin: 0 5%;
 }
-.internBox {
-    height: 55%;
-    background: url(/media/epicLogoTrans.png) center center no-repeat;
-    background-size: 467px 180px;
-}
+
 .tutorButton:hover, .abroadButton:hover, .internButton:hover {
     cursor: pointer;
     background-color: #999999;
