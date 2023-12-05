@@ -24,7 +24,7 @@
     object-fit: cover;
     position: absolute;
     background-color: black;
-    transition: opacity .15s;
+    transition: opacity .3s;
 }
 .projectBox div {
     position: relative;
